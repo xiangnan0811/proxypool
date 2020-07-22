@@ -7,8 +7,9 @@ from retrying import retry
 import requests
 from loguru import logger
 
+requests.packages.urllib3.disable_warnings()
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
 }
 
 
@@ -18,7 +19,7 @@ class BaseCrawler(object):
     @retry(stop_max_attempt_number=3, retry_on_result=lambda x: x is None)
     def fetch(self, url, **kwargs):
         try:
-            response = requests.get(url, headers=headers, **kwargs)
+            response = requests.get(url, headers=headers, verify=False, **kwargs)
             if response.status_code == 200:
                 return response.text
         except requests.ConnectionError:

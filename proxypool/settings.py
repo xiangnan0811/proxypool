@@ -58,7 +58,7 @@ CYCLE_TESTER = env.int('CYCLE_TESTER', 20)
 CYCLE_GETTER = env.int('CYCLE_GETTER', 100)
 
 # definition of tester
-TEST_URL = env.str('TEST_URL', 'http://www.taobao.com')
+TEST_URL = env.str('TEST_URL', 'http://www.python-spider.com/challenge/')
 TEST_TIMEOUT = env.int('TEST_TIMEOUT', 10)
 TEST_BATCH = env.int('TEST_BATCH', 20)
 # TEST_HEADERS = env.json('TEST_HEADERS', {
