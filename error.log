@@ -26499,3 +26499,2247 @@ Traceback (most recent call last):
           ©¸ <class 'retrying.RetryError'>
 
 retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 18:55:52.493 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='180.118.128.76', port='9000')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 18:55:54.453 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>
+        ©¸ Proxy(host='101.4.136.34', port=81)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'http://www.nimadaili.com/gaoni/4'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>, 'http://www.nimadaili.com/gaoni/4')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 18:56:04.687 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='211.21.120.163', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='211.21.120.163', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc89f88>
+
+IndexError: list index out of range
+2020-07-22 18:57:08.027 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='211.21.120.163', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 18:59:28.454 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='113.194.29.185', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 18:59:54.836 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='124.172.232.49', port=8010)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='124.172.232.49', port=8010)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc81fc8>
+
+IndexError: list index out of range
+2020-07-22 19:00:58.142 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='124.172.232.49', port=8010)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:36:51.261 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='113.194.29.185', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:36:59.245 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc8c4c8>
+
+IndexError: list index out of range
+2020-07-22 19:38:02.605 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:40:13.335 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='113.194.29.185', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:40:58.943 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc927c8>
+
+IndexError: list index out of range
+2020-07-22 19:42:02.264 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:44:23.912 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='113.194.29.185', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:44:53.862 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc941c8>
+
+IndexError: list index out of range
+2020-07-22 19:45:57.208 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:47:45.842 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='113.194.29.185', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:47:48.413 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>
+        ©¸ Proxy(host='182.23.103.6', port=3137)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'http://www.nimadaili.com/gaoni/4'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>, 'http://www.nimadaili.com/gaoni/4')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:48:02.240 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc95448>
+
+IndexError: list index out of range
+2020-07-22 19:49:05.579 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:50:55.391 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='113.194.29.185', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:51:24.394 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc8c148>
+
+IndexError: list index out of range
+2020-07-22 19:52:27.700 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='101.132.39.115', port=8080)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:54:34.494 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='120.83.101.166', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/3/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/3/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:55:04.096 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc4f848>
+
+IndexError: list index out of range
+2020-07-22 19:56:07.495 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:57:55.430 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='223.242.225.227', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 19:58:02.788 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc96508>
+
+IndexError: list index out of range
+2020-07-22 19:59:06.105 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:01:00.023 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='223.242.225.227', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:01:20.371 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc9aac8>
+
+IndexError: list index out of range
+2020-07-22 20:02:23.623 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:04:12.609 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='223.242.225.227', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:04:14.818 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>
+        ©¸ Proxy(host='113.124.95.40', port=9999)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'http://www.nimadaili.com/gaoni/5'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.nimadaili.NimadailiCrawler object at 0x000001D55DBCD748>, 'http://www.nimadaili.com/gaoni/5')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:04:27.805 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc94c08>
+
+IndexError: list index out of range
+2020-07-22 20:05:31.056 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='139.217.110.76', port=3128)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:07:18.677 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+        ©¸ Proxy(host='223.242.225.227', port='9999')
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.kuaidaili.com/free/inha/2/'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.kuaidaili.KuaidailiCrawler object at 0x000001D55DBCD6C8>, 'https://www.kuaidaili.com/free/inha/2/')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
+2020-07-22 20:07:32.007 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='211.144.213.145', port=80)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 36, in crawl
+    for proxy in self.parse(html):
+        ©¦        ©¦    ©¦     ©¸ '<!DOCTYPE html><html lang="zh-cn"><head></head><body><meta"utf-8"/><meta name="viewport"content="width=device-width, initial...
+        ©¦        ©¦    ©¸ <function XiaohuanProxyCrawler.parse at 0x000001D55D8B9DC8>
+        ©¦        ©¸ <public.xiaohuan_proxy.XiaohuanProxyCrawler object at 0x000001D55DBCD7C8>
+        ©¸ Proxy(host='211.144.213.145', port=80)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\public\xiaohuan_proxy.py", line 29, in parse
+    address = tr.xpath('./td[1]/a/text()')[0]
+              ©¦  ©¸ <cyfunction _Element.xpath at 0x000001D55D83CAC8>
+              ©¸ <Element tr at 0x1d55dc81b48>
+
+IndexError: list index out of range
+2020-07-22 20:08:35.352 | ERROR    | proxypool.processors.getter:run:41 - An error has been caught in function 'run', process 'Process-2' (40616), thread 'MainThread' (40648):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 105, in spawn_main
+    exitcode = _main(fd)
+               ©¦     ©¸ 3
+               ©¸ <function _main at 0x000001D55BE1F798>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\spawn.py", line 118, in _main
+    return self._bootstrap()
+           ©¦    ©¸ <function BaseProcess._bootstrap at 0x000001D55BDF8288>
+           ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 297, in _bootstrap
+    self.run()
+    ©¦    ©¸ <function BaseProcess.run at 0x000001D55BDF78B8>
+    ©¸ <Process(Process-2, started)>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\multiprocessing\process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+    ©¦    ©¦        ©¦    ©¦        ©¦    ©¸ {}
+    ©¦    ©¦        ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¦        ©¦    ©¸ ()
+    ©¦    ©¦        ©¸ <Process(Process-2, started)>
+    ©¦    ©¸ <bound method Scheduler.run_getter of <proxypool.scheduler.Scheduler object at 0x000001D55DBB5B88>>
+    ©¸ <Process(Process-2, started)>
+
+  File "f:\spider_projects\proxypool\proxypool\scheduler.py", line 52, in run_getter
+    getter.run()
+    ©¦      ©¸ <function Getter.run at 0x000001D55D8B9EE8>
+    ©¸ <proxypool.processors.getter.Getter object at 0x000001D55BDF5C48>
+
+> File "f:\spider_projects\proxypool\proxypool\processors\getter.py", line 41, in run
+    for proxy in crawler.crawl():
+        ©¦        ©¦       ©¸ <function BaseCrawler.crawl at 0x000001D55D731318>
+        ©¦        ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+        ©¸ Proxy(host='211.144.213.145', port=80)
+
+  File "f:\spider_projects\proxypool\proxypool\crawlers\base.py", line 35, in crawl
+    html = self.fetch(url)
+           ©¦    ©¦     ©¸ 'https://www.xicidaili.com/nn/1'
+           ©¦    ©¸ <function BaseCrawler.fetch at 0x000001D55D731288>
+           ©¸ <public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ©¦         ©¦        ©¦         ©¦   ©¦       ©¸ {}
+           ©¦         ©¦        ©¦         ©¦   ©¸ (<public.xicidaili.XicidailiCrawler object at 0x000001D55DBCD808>, 'https://www.xicidaili.com/nn/1')
+           ©¦         ©¦        ©¦         ©¸ <function BaseCrawler.fetch at 0x000001D55D7311F8>
+           ©¦         ©¦        ©¸ {'stop_max_attempt_number': 3, 'retry_on_result': <function BaseCrawler.<lambda> at 0x000001D55D2B8318>}
+           ©¦         ©¸ ()
+           ©¸ <class 'retrying.Retrying'>
+
+  File "D:\ProgramData\Anaconda3\envs\spider\lib\site-packages\retrying.py", line 214, in call
+    raise RetryError(attempt)
+          ©¦          ©¸ Attempts: 3, Value: None
+          ©¸ <class 'retrying.RetryError'>
+
+retrying.RetryError: RetryError[Attempts: 3, Value: None]
